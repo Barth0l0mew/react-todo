@@ -60,7 +60,7 @@ function add(value){
     <context.Provider value={{removeTodo}}>
    <div className='wrapper'> 
       {load? <Loader></Loader>:null}
-      <h1 style={{textAlign:'center'}}>React tutorial</h1>
+      <h1 style={{textAlign:'center', color:'blue'}}>React tutorial</h1>
       <AddToDo create={add}></AddToDo>
       {todo.length?  <ToDoList prop={todo} onTogle={togle}></ToDoList>:load?null:<h5>No list</h5>}
     
